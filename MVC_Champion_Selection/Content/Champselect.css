@@ -1,0 +1,170 @@
+﻿
+/*body { 
+	background: url(img/background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
+
+
+.team {
+	background-color: rgba(201,230,240,0.8);
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+	-webkit-box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+	box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+}
+
+.team h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.middle {
+	background-color: rgba(201,230,240,0.8);
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 5px;
+	-webkit-box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+	box-shadow: 3px 2px 12px 2px rgba(0,0,0,0.75);
+	height: 520px;
+}
+
+/*.jumbotron {
+	background-color: rgba(0,0,0,0);
+}*/
+
+.player {
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.player p {
+	display: inline;
+}
+
+.player img {
+	display: inline;
+	padding: 0px;
+	border-width: 1px;
+	/* change this to 3 if you dont like circles */
+	border-radius: 3px;
+	border-color: gray;
+}
+
+.bans img {
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: gray;
+}
+
+.bans ul {
+	padding-bottom: 10px;
+}
+
+.bans h4 {
+	padding-top: 10px;
+	padding-left: 0px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.bans li{
+	display: inline;
+	margin-left: 10px;
+}
+
+.button-container li {
+	margin: 2px;
+	/* display: list-item; */
+	display: inline-block;
+	margin-bottom: 5px;
+    width: 70px;
+    height: 70px;
+    background: lightgray;
+	padding-top: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: gray;
+	border-radius: 2px;
+}
+
+/* .button-container img {
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+} */
+
+/* .selected img {
+	border-color: red;
+	border-style: solid;
+	border-width: 2px;
+} */
+
+.button-container {
+	text-align: center;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 270px;
+}
+
+.button {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    text-align: center;
+}
+
+.champion-list p {
+	font-size: 11px;
+	cursor:default;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.champion-list {
+	padding-left: 0px;
+}
+
+.banned {
+	opacity: 0.4;
+	filter: alpha(opacity=40); /* msie */
+	background-color: #000;
+    filter: grayscale(100%);
+    /* Browser Specific */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+}
+
+.picked {
+    filter: grayscale(100%);
+    /* Browser Specific */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+}
