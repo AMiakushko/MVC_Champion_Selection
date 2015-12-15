@@ -102,5 +102,26 @@ function makeGridElement(champion, version) {
 // This event is fired when button in grid is clicked.
 // Since the buttons are added asynchronously, event handler should be added same way.
 function buttonClick() {
-	$( this ).toggleClass( "banned" );
+
+    // Check if button was used already
+    if ($(this).hasClass("banned")) return;
+    if ($(this).hasClass("pickedBlue")) return;
+    if ($(this).hasClass("pickedRed")) return;
+
+    // Get current stage of pick/ban
+    var stage = getCurrentStage();
+    var stageName = getCurrentStageName();
+
+
+    var img = $(this).children().attr('src');
+    var alt = $(this).children().attr('alt');
+    window.alert("stage: "+ stage + " " + stageName + " " + img);
+
+    setNextStage();
+
+    // Select appropriate class for the champion clicked
+    $(this).addClass("banned");
+
+    
+    
 }

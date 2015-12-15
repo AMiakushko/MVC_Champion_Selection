@@ -1,31 +1,28 @@
 ﻿
-<div class="players">
-    <div class="player">
-        <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner">
-        <p>Player 1</p>
+<div class="team">
+
+    <h3>@Model.Side team</h3>
+
+    <div class="players">
+
+        @{
+            for (int i = 1; i < 6; i++)
+            {
+                Html.RenderPartial("_Player", new PlayerViewModel(Model.Side, i));
+            }
+        }
     </div>
-    <div class="player">
-        <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner">
-        <p>Player 2</p>
+    <div class="bans">
+        <h4> @Model.Side side bans</h4>
+        <ul>
+
+            @{
+                for (int j = 1; j < 4; j++)
+                {
+                    Html.RenderPartial("_Ban", new BanViewModel(Model.Side, j));
+                }
+            }
+        </ul>
     </div>
-    <div class="player">
-        <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner">
-        <p>Player 3</p>
-    </div>
-    <div class="player">
-        <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner">
-        <p>Player 4</p>
-    </div>
-    <div class="player">
-        <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner">
-        <p>Player 5</p>
-    </div>
-</div>
-<div class="bans">
-    <h4>Blue team bans</h4>
-    <ul>
-        <li><img class="firstbban" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner"></li>
-        <li><img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner"></li>
-        <li><img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner"></li>
-    </ul>
+
 </div>

@@ -14,43 +14,38 @@
 
                 @* Blue side champions *@
                 <div class="col-md-3">
-                    <div class="team">
-                        <h3>Blue team</h3>
-                        @{ Html.RenderPartial("_Team"); }
-                    </div>
+
+                    @{ Html.RenderPartial("_Team", new TeamViewModel("blue")); }
+                
                 </div>
+            </div>
 
-                @* Center panel *@
-                <div class="col-md-6">
-                    <div class="middle">
-                        <div class="board">
-                            <h2>Board</h2>
-                        </div>
-                        <div class="champions">
-                            <h2>Champions</h2>
-
-                            <div class="menu-container">
-                                <div class="button-container">
-                                    <ul class="champion-list"></ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="selector">
-                            <h2>Selector</h2>
-                            <label for='search_field'>Enter terms to search:</label><br />
-                            <input id='search_field' name='search_field' type='text' />
-                        </div>
+            @* Center panel *@
+            <div class="col-md-6">
+                <div class="middle">
+                    <div class="board">
+                        <h2 id="board">Board</h2>
                     </div>
-                </div>
+                    
+                    @* Champion Grid *@
+                    @{ Html.RenderPartial("_Champions");}
 
-                @* Red side champions *@
-                <div class="col-md-3">
-                    <div class="team">
-                        <h3>Red team</h3>
-                        @{ Html.RenderPartial("_Team"); }
+                    @* Champion Search / Filter *@
+                    <div class="selector">
+                        <h2>Selector</h2>
+                        <label for='search_field'>Enter terms to search:</label><br />
+                        <input id='search_field' name='search_field' type='text' />
                     </div>
                 </div>
             </div>
+
+            @* Red side champions *@
+            <div class="col-md-3">
+
+                @{ Html.RenderPartial("_Team", new TeamViewModel("red")); }
+
+            </div>
         </div>
     </div>
+</div>
 </div>
