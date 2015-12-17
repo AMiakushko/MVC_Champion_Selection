@@ -7,45 +7,40 @@
 
 <div class="championselect">
 
-    @* Override of bootstrap jumbotron style for this page *@
-    <div class="jumbotron" style="background-color:rgba(0,0,0,0);">
-        <div class="container">
-            <div class="row">
 
-                @* Blue side champions *@
-                <div class="col-md-3">
+    <div class="container">
+        @* Blue side champions *@
+        <div class="col-md-3">
 
-                    @{ Html.RenderPartial("_Team", new TeamViewModel("blue")); }
-                
+            @{ Html.RenderPartial("_Team", new TeamViewModel("blue")); }
+
+        </div>
+
+
+        @* Center panel *@
+        <div class="col-md-6">
+            <div class="middle">
+                <div class="board">
+                    <h2 id="board">Board</h2>
                 </div>
-            </div>
 
-            @* Center panel *@
-            <div class="col-md-6">
-                <div class="middle">
-                    <div class="board">
-                        <h2 id="board">Board</h2>
-                    </div>
-                    
-                    @* Champion Grid *@
-                    @{ Html.RenderPartial("_Champions");}
+                @* Champion Grid *@
+                @{ Html.RenderPartial("_Champions");}
 
-                    @* Champion Search / Filter *@
-                    <div class="selector">
-                        <h2>Selector</h2>
-                        <label for='search_field'>Enter terms to search:</label><br />
-                        <input id='search_field' name='search_field' type='text' />
-                    </div>
+                @* Champion Search / Filter *@
+                <div class="selector">
+                    <h2>Selector</h2>
+                    <label for='search_field'>Enter terms to search:</label><br />
+                    <input id='search_field' name='search_field' type='text' />
                 </div>
-            </div>
-
-            @* Red side champions *@
-            <div class="col-md-3">
-
-                @{ Html.RenderPartial("_Team", new TeamViewModel("red")); }
-
             </div>
         </div>
+
+        @* Red side champions *@
+        <div class="col-md-3">
+
+            @{ Html.RenderPartial("_Team", new TeamViewModel("red")); }
+
+        </div>
     </div>
-</div>
 </div>

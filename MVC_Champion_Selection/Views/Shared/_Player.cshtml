@@ -1,5 +1,9 @@
 ﻿
+@{ 
+    string id = Model.Side + "pick" + Model.Number;
+}
+
 <div class="player">
-    <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="@{ @Model.Side @Model.Number }">
+    <img src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="@id">
     <p>Player @Model.Number</p>
 </div>

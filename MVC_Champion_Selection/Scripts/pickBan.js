@@ -1,29 +1,31 @@
-﻿var stages = ["blueBan1", "redBan1" , "blueBan2" , 
-    "redBan2", "blueBan3", "redBan3",  "bluePick1",
-"redPick1", "redPick2", "bluePick2", "bluePick3", 
-"redPick3", "redPick4", "bluePick4", "bluePick5", "redPick5"];
-
+﻿
 var currentStage = 0;
 
-//$(document).ready(resetPickBan());
-
-//function resetPickBan()
-//{
-//    currentStage = 0;
-
-//}
+var pickBanEnded = false;
 
 function getCurrentStage()
 {
     return currentStage;
 }
 
-function getCurrentStageName()
-{
-    return stages[currentStage];
+function getCurrentStageName() {
+    // eg: blueban1, redpick2
+    var str = pickBanStages[currentStage].side + pickBanStages[currentStage].type + pickBanStages[currentStage].id;
+    return str;
 }
 
-function setNextStage()
-{
-    currentStage = currentStage + 1;
+function setNextStage() {
+    if (currentStage != 15) {
+        currentStage = currentStage + 1;
+    }
+    else
+    {
+        pickBanEnded = true;
+    }
+}
+
+function setPick(iconSource) {
+    $( "#" + getCurrentStageName() ).attr({
+        src: iconSource
+    });
 }
