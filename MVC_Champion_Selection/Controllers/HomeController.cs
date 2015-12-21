@@ -10,7 +10,7 @@ namespace MVC_Champion_Selection.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("ChampionSelect", "Home");
         }
 
         public ActionResult About()

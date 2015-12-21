@@ -37,8 +37,14 @@
         @RenderBody()
         <hr />
         <footer>
-            <div class="col-md-10" id="credits"><p>&copy; @DateTime.Now.Year - Aleksey Miakushko. Portfolio.</p></div>
-            <div class="col-md-2"><button onclick="switchTheme()" class="btn btn-default">Switch Theme</button></div>
+            <div class="col-md-8" id="credits"><p>&copy; @DateTime.Now.Year - Aleksey Miakushko. Portfolio.</p></div>
+
+            <div class="col-md-4">
+                <p>
+                    <button onclick="TogetherJS(this); return false;" class="btn btn-default">Start TogetherJS</button>
+                    <button onclick="switchTheme()" class="btn btn-default">Switch Theme</button>
+                </p>
+            </div>
             
         </footer>
     </div>
@@ -50,6 +56,7 @@
     @Scripts.Render("~/scripts/pickBanStages.js")
     @Scripts.Render("~/scripts/pickBan.js")
     @Scripts.Render("~/scripts/changeTheme.js")
+    @Scripts.Render("https://togetherjs.com/togetherjs-min.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>
