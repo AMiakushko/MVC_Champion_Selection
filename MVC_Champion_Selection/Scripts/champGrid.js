@@ -78,7 +78,7 @@ function makeGridElement(champion, version) {
 	
     // Make champion container
     var $gridElement = $("<li></li>", {
-        "class": "button" + " " +
+        "class": "button btn btn-default" + " " +
 		champion.name.toLowerCase() + " " +
 		champion.key.toLowerCase() + " " +
 		champion.tags[0].toLowerCase() +
@@ -100,7 +100,6 @@ function makeGridElement(champion, version) {
 }
 
 // This event is fired when button in grid is clicked.
-// Since the buttons are added asynchronously, event handler should be added same way.
 function buttonClick() {
 
     // Check if champion was selected already
@@ -120,12 +119,14 @@ function buttonClick() {
 
     // Here should be champion selector call
     setPick(img);
-
+    
     // window.alert("stage: " + stage + " " + stageName + " " + img + " " + alt);
 
     // Select appropriate class for the champion clicked
     $(this).addClass("banned");
 
+    // Adds timeout for previous animation to play out.
+    // setTimeout(setNextStage, 300);
     setNextStage();
     
 }

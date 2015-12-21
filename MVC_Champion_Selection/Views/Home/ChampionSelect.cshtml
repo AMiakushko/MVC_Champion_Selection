@@ -20,19 +20,27 @@
         @* Center panel *@
         <div class="col-md-6">
             <div class="middle">
-                <div class="board">
-                    <h2 id="board">Board</h2>
+                <div id="board" class="row">
+                    <div class="col-md-12">
+                        <h3 id="board-text">Champions</h3>
+                    </div>
                 </div>
+
+                <div>
+                    @* Champion Search / Filter *@
+                    
+                    <div id="selector">
+                        <button id="reset_button" onclick="resetPicksBans()" type="button" class="btn btn-default btn-sm">Reset</button>
+                        <label id="search_label" class="btn btn-default btn-sm" for='search_field'>Search:</label>
+                        <input id='search_field' class="btn btn-default btn-sm" name='search_field' type='text' />
+                    </div>
+                </div>
+
+                
 
                 @* Champion Grid *@
                 @{ Html.RenderPartial("_Champions");}
-
-                @* Champion Search / Filter *@
-                <div class="selector">
-                    <h2>Selector</h2>
-                    <label for='search_field'>Enter terms to search:</label><br />
-                    <input id='search_field' name='search_field' type='text' />
-                </div>
+                
             </div>
         </div>
 

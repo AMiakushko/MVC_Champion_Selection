@@ -1,11 +1,18 @@
 ﻿
-/*body { 
-	background: url(img/background.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}*/
+body {
+}
+
+.useTheme {
+    background: url('../img/1680x1050_1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.useTheme_text {
+    color: ghostwhite;
+}
 
 .championselect .container {
     margin-top: 20px;
@@ -48,14 +55,9 @@
 }
 
 .player {
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
     margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 5px;
-    background-color: mintcream;
 }
 
     .player p {
@@ -84,26 +86,23 @@
 }
 
 .bans ul {
-    padding-bottom: 10px;
+    padding-left: 0px;
 }
 
 .bans h4 {
-    padding-top: 10px;
-    padding-left: 0px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .bans li {
     display: inline;
-    margin-left: 10px;
+    margin: 3px;
 }
 
 .button-container li {
     margin: 2px;
     /* display: list-item; */
     display: inline-block;
-    margin-bottom: 5px;
+    margin-top: 7px;
     width: 70px;
     height: 70px;
     background: lightgray;
@@ -117,8 +116,8 @@
 .button-container {
     text-align: center;
     overflow-y: auto;
-    overflow-x: hidden;
-    height: 270px;
+    overflow-x: auto;
+    height: 400px;
 }
 
 .button {
@@ -129,6 +128,9 @@
     -ms-user-select: none;
     user-select: none;
     text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
 
 .champion-list p {
@@ -140,6 +142,19 @@
 
 .champion-list {
     padding-left: 0px;
+}
+
+.champion-list li {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
 
 .banned {
@@ -162,3 +177,63 @@
     -o-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
 }
+
+#board h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#selector {
+    display: block;
+    text-align: right;
+    margin: 5px;
+}
+
+#reset_button {
+    display: inline-block;
+}
+
+.alpha60 {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.bans {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.myborder {
+    background-color: mintcream;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 5px;
+}
+
+.selectedBan {
+    border-width: 5px;
+    border-style: solid;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    border-radius: 3px;
+    border-color: darkslategrey;
+    padding-left: 0px;
+}
+
+.selectedPlayer {
+    background-color: darkslategray;
+    color: mintcream;
+}
+
+/*footer {
+    float:right;
+    display: inline-block;
+}*/

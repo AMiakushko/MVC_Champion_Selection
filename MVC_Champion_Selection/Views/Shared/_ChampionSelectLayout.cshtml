@@ -37,7 +37,9 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Aleksey Miakushko. Portfolio.</p>
+            <div class="col-md-10" id="credits"><p>&copy; @DateTime.Now.Year - Aleksey Miakushko. Portfolio.</p></div>
+            <div class="col-md-2"><button onclick="switchTheme()" class="btn btn-default">Switch Theme</button></div>
+            
         </footer>
     </div>
 
@@ -47,6 +49,7 @@
     @Scripts.Render("~/scripts/search.js")
     @Scripts.Render("~/scripts/pickBanStages.js")
     @Scripts.Render("~/scripts/pickBan.js")
+    @Scripts.Render("~/scripts/changeTheme.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>
