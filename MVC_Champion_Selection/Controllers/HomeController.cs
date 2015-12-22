@@ -10,7 +10,7 @@ namespace MVC_Champion_Selection.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("ChampionSelect", "Home");
+            return View();
         }
 
         public ActionResult About()
@@ -34,6 +34,12 @@ namespace MVC_Champion_Selection.Controllers
             return View();
         }
 
+        public ActionResult Help()
+        {
+            ViewBag.Message = "Help";
+
+            return View();
+        }
 
     }
 }

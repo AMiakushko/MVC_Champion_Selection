@@ -22,3 +22,17 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Set background image*/
+body {
+    background: url('../img/1680x1050_1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Override jumbotron color to transparent verion */
+.jumbotron {
+    background-color: rgba(238, 238, 238, 0.9);
+}

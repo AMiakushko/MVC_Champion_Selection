@@ -260,6 +260,7 @@
     <Content Include="Views\Shared\_ChampionSelectLayout.cshtml" />
     <Content Include="Views\Shared\_Player.cshtml" />
     <Content Include="Views\Shared\_Ban.cshtml" />
+    <Content Include="Views\Home\Help.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
