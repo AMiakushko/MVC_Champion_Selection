@@ -79,6 +79,11 @@ function resetPicksBans() {
     $("#blueban1").parent().addClass("selectedBan");
 
     // window.alert("reset invoked");
+
+    for (var i = 1; i < 6; i++) {
+        $("#blueListItem" + i).parent().append($("#blueListItem" + i));
+        $("#redListItem" + i).parent().append($("#redListItem" + i));
+    }
 }
 
 $(document).ready(function () {

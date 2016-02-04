@@ -2,22 +2,34 @@
     ViewBag.Title = "Help";
     ViewBag.Message = "Champion Select";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>This project is made to simulate process of banning and picking champions in League of Legends draft. 
-    The following paragraph describes how to use this thing the way it meant to work.</p>
 
-<h3>Search</h3>
-    <p>At the moment, can find <b>champion by full name</b> 
-    (or in cases of two-word names like <b>"Miss Fortune"</b> by either first or second i.e. <b>"Miss"</b> and <b>"Fortune"</b>). 
-    In cases when champion has apostrophe in its name, you should omit it (i.e. <b>Rek'Sai - RekSai</b>).</p>
-<h4>Tags</h4>    
+<div class="black70roundedborder">
+    <h2>@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>
+        This project is made to simulate process of banning and picking champions in League of Legends draft.
+        The following paragraph describes how to use this thing the way it meant to work.
+    </p>
+
+    <h3>Search</h3>
+    <p>
+        At the moment, can find <b>champion by full name</b>
+        (or in cases of two-word names like <b>"Miss Fortune"</b> by either first or second i.e. <b>"Miss"</b> and <b>"Fortune"</b>).
+        In cases when champion has apostrophe in its name, you should omit it (i.e. <b>Rek'Sai - RekSai</b>).
+    </p>
+    <h4>Tags</h4>
     <p>Secondly, search can be used to filter champions by riot's official <b>champion tags&trade;</b>.</p>
     <p>Those tags include "Fighter", "Tank", "Mage", "Assassin", "Support", "Marksman".</p>
     <p>If it tells you that Amumu is mage, and Leona is not support. Tell that to riot, not me. I pull that from Riot API.</p>
 
-<h3>Sharing</h3>
-<p>Sharing allows you to experience same champion select with your fellow comrades.</p>
-<p>To achieve that, press <b>Start sharing</b> button at the bottom right of the page. Follow an instructions and get sharing link. Once your friends joined session, they will see same things you do. They will also be able to select champions and everything else you do.</p>
-<p>Thanks to sweet togetherjs&reg; library, you will also get access to text chat and voice chat.</p>
+    <h3>Sharing</h3>
+    <p>Sharing allows you to experience same champion select with your fellow comrades.</p>
+    <p>To achieve that, press <b>Start sharing</b> button at the bottom right of the page. Follow an instructions and get sharing link. Once your friends joined session, they will see same things you do. They will also be able to select champions and everything else you do.</p>
+    <p>Thanks to sweet togetherjs&reg; library, you will also get access to text chat and voice chat.</p>
+
+    <h3>Drag and Drop</h3>
+    <p>Before or after you start picking champions, you can rearrange players on teams by dragging them up or down in corresponding team. It won't mess pick order and you can always reset positions of players with reset button.</p>
+</div>
+

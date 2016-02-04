@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "";
+}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Sortable - Default functionality</title>
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        #sortable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60%;
+        }
+
+            #sortable li {
+                margin: 0 3px 3px 3px;
+                padding: 0.4em;
+                padding-left: 1.5em;
+                font-size: 1.4em;
+                height: 18px;
+            }
+
+                #sortable li span {
+                    position: absolute;
+                    margin-left: -1.3em;
+                }
+    </style>
+    <script>
+        $(function () {
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
+        });
+    </script>
+</head>
+<body>
+
+    <div class="players" id="sortable">
+
+        <div class="player myborder ui-state-default">
+            <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="redpick1">
+            <p>Player 1</p>
+        </div>
+        <div class="player myborder ui-state-default">
+            <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="redpick2">
+            <p>Player 2</p>
+        </div>
+        <div class="player myborder ui-state-default">
+            <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="redpick3">
+            <p>Player 3</p>
+        </div>
+        <div class="player myborder ui-state-default">
+            <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="redpick4">
+            <p>Player 4</p>
+        </div>
+        <div class="player myborder ui-state-default">
+            <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="redpick5">
+            <p>Player 5</p>
+        </div>
+        <div class="player myborder ui-state-default">
+            <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="redpick6">
+            <p>Player 6</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

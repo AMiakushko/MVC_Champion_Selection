@@ -1,9 +1,10 @@
 ﻿
 @{ 
     string id = Model.Side + "pick" + Model.Number;
+    string listId = Model.Side + "ListItem" + Model.Number;
 }
 
-<div class="player myborder">
-    <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="@id">
-    <p>Player @Model.Number</p>
-</div>
+    <div class="player myborder ui-state-default" id="@listId">
+        <img class="playericon" src="~/img/VizObscure.png" height="42" width="42" alt="Summoner" id="@id">
+        <p>Player @Model.Number</p>
+    </div>

@@ -41,5 +41,9 @@ namespace MVC_Champion_Selection.Controllers
             return View();
         }
 
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }

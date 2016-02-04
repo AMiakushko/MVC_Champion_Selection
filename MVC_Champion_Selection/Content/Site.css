@@ -36,3 +36,13 @@ body {
 .jumbotron {
     background-color: rgba(238, 238, 238, 0.9);
 }
+
+.black70roundedborder {
+    background-color: rgba(0, 0, 0, 0.70);
+    border-width: 1px;
+    border-color: black;
+    border-radius: 3px;
+    border-style: solid;
+    color: ghostwhite;
+    padding: 15px;
+}

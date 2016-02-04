@@ -10,22 +10,33 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <div class="black70roundedborder">
+            <h2>Help</h2>
+            <p>
+                Because this site is made by best spagetti standards, you can go to the Help page if you ever find yourself wondering what is up.
+            </p>
+            <p class="text-right">@Html.ActionLink("Help", "Help", "Home", null, new { @class = "btn btn-default" })</p>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <div class="black70roundedborder">
+            <h2>Contact</h2>
+            <p>If you wanna personaly say how good this spagetti is, or you are great cheif yourself you can contact me on Contact page.</p>
+            <p class="text-right">@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "btn btn-default" })</p>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="black70roundedborder">
+            <h2>Subreddit</h2>
+            <p>If you are used to reddit, you are welcomed on subreddit dedicated to everything about this project including current todo list etc.</p>
+            <p class="text-right"><a class="btn btn-default" target="_blank" href="http://reddit.com/r/championselect/">Reddit</a></p>
+        </div>
     </div>
 </div>
+
+<script>
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+</script>

@@ -36,19 +36,21 @@
         @RenderBody()
         <hr />
         <footer>
-            <div class="col-md-8" id="credits"><p>&copy; @DateTime.Now.Year - Shadow Evelynn</p></div>
-
-            <div class="col-md-4">
-                <p>
+            <div class="black70roundedborder">
+                <div class="col-md-8" id="credits">
+                <p>&copy; @DateTime.Now.Year - Shadow Evelynn</p>
+                </div>
+                <span class="text-right">
                     <button onclick="TogetherJS(this); return false;" class="btn btn-default">Start Sharing</button>
-                    <button onclick="switchTheme()" class="btn btn-default">Switch Theme</button>
-                </p>
+                    @*<button onclick="switchTheme()" class="btn btn-default">Switch Theme</button>*@
+                </span>
+
             </div>
-            
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/scripts/champGrid.js")
     @Scripts.Render("~/scripts/search.js")
@@ -58,5 +60,11 @@
     @Scripts.Render("~/scripts/togetherjs-config.js")
     @Scripts.Render("https://togetherjs.com/togetherjs-min.js")
     @RenderSection("scripts", required: false)
+    <script>
+        $(function () {
+            $(".sortable").sortable();
+            $(".sortable").disableSelection();
+        });
+    </script>
 </body>
 </html>

@@ -3,19 +3,17 @@
 
     <h3>@Model.Side team</h3>
 
-    <div class="players">
-
-        @{
-            for (int i = 1; i < 6; i++)
-            {
-                Html.RenderPartial("_Player", new PlayerViewModel(Model.Side, i));
+    <div class="players sortable">
+            @{
+                for (int i = 1; i < 6; i++)
+                {
+                    Html.RenderPartial("_Player", new PlayerViewModel(Model.Side, i));
+                }
             }
-        }
     </div>
     <div class="bans myborder">
         <h4> @Model.Side side bans</h4>
         <ul>
-
             @{
                 for (int j = 1; j < 4; j++)
                 {
